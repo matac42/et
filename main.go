@@ -15,7 +15,7 @@ func main() {
     router := gin.Default()
     m := melody.New()
 
-    rg := router.Group("/sampleapp")
+    rg := router.Group("/et")
     rg.GET("/", func(ctx *gin.Context) {
         http.ServeFile(ctx.Writer, ctx.Request, "index.html")
     })
