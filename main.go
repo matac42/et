@@ -36,8 +36,8 @@ func main() {
         log.Printf("websocket connection close. [session: %#v]\n", s)
     })
 
-    // Listen and server on 0.0.0.0:8989
-    router.Run(":8989")
+    // Listen and server on 0.0.0.0:8080
+    router.Run(":8080")
 
     fmt.Println("Websocket App End.")
 }
